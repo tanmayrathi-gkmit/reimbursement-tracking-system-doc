@@ -1,0 +1,38 @@
+site_name: Reimbursement Tracking System
+
+nav:
+  - Overview: index.md
+  - Functional Documentation: functional.md
+  - Use Case: bus-sys-use.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+  hide:
+    - footer
+plugins:
+  - search
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+
