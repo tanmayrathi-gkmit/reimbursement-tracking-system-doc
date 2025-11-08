@@ -60,4 +60,4 @@ This section explains how the system works from the point of view of both Employ
 
 ---
 
-**Next:** [Business Use Cases](usecase.md)
+**Next:** [Business Use Cases](bus-sys-use.md)
