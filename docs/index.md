@@ -1,8 +1,5 @@
-# **Overview**
-
+# **Reimbursement Tracking System – Overview**
 Welcome to the documentation for the Reimbursement Tracking System.  
-
-
 ## **Introduction**
 The Reimbursement Tracking System helps employees record their reimbursement request and submit them for admin approval.  
 Admins can review these reimbursement requests, approve or reject them, and the system keeps track of everything digitally.
@@ -46,4 +43,4 @@ Admins can review these reimbursement requests, approve or reject them, and the 
 - Add a **receipt upload option** for employees when submitting expenses. These uploaded receipts can be stored securely using **AWS S3** for better scalability.
 ---
 
-**Next:** [Functional Overview](functional.md)
+**Next:** [Functional Documentation](functional.md)

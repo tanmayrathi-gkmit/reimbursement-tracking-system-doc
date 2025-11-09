@@ -4,7 +4,7 @@
 This document describes the key **use cases** for the **Reimbursement Tracking System**.  
 The goal is to simplify and digitize the organization’s reimbursement process by replacing manual Google Forms and emails with a transparent, efficient, and centralized digital system.
 
-## **Business Overview**
+### **Business Overview**
 Currently, employees submit travel or work-related reimbursement claims manually using forms or spreadsheets.  
 This process is slow, error-prone, and lacks visibility for both employees and administrators.
 
@@ -74,7 +74,7 @@ To ensure that all submitted reimbursement requests are reviewed and processed e
 The **Reimbursement Tracking System** makes the reimbursement process faster, easier, and more transparent for everyone in the organization.  
 Instead of using Google Forms or emails, all tasks, from expense submission to final approval, happen in one system.
 
-### **With this system:**
+#### **With this system:**
 - Employees can easily add, track, and manage their reimbursement requests.  
 - Admins can review and approve requests efficiently from one dashboard.  
 - It saves time, reduces human error, and keeps all data organized.  

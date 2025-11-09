@@ -1,4 +1,4 @@
-# **Functional Documentation**
+# **Reimbursement Tracking System – Functional Documentation**
 
 This section explains how the system works from the point of view of both Employee and Admin users.
 
@@ -15,14 +15,14 @@ This section explains how the system works from the point of view of both Employ
 - Reimbursement request is saved with status = Draft.
 - Reimbursement request can be edited or deleted before submission.
 
-#### Add Transactions
+#### Add Expenses
 - Each reimbursement request can have multiple expenses.
 - Each expense includes:
-  - Title  
-  - Date & Time  
-  - Category (Food, Transport, Lodging, Other)  
-  - Amount  
-  - Description (optional)
+    - Title  
+    - Date & Time  
+    - Category (Food, Transport, Lodging, Other)  
+    - Amount  
+    - Description (optional)
 - User can edit or delete expenses while reimbursement request is still Draft.
 
 #### Submit reimbursement request
@@ -35,7 +35,7 @@ This section explains how the system works from the point of view of both Employ
 
 ### **Employee Flow Overview**
 
-![Employee Reimbursement Flowchart](assets/images/employee-flow.svg){ width="50%" style="display:block; margin-left:auto; margin-right:auto;" }
+![Employee Reimbursement Flowchart](assets/images/emp-flow.svg){ width="50%" style="display:block; margin-left:auto; margin-right:auto;" }
 
 ---
 
@@ -60,4 +60,4 @@ This section explains how the system works from the point of view of both Employ
 
 ---
 
-**Next:** [Business Use Cases](bus-sys-use.md)
+**Next:** [Use Cases](bus-sys-use.md)
