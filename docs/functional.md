@@ -6,36 +6,36 @@ This section explains how the system works from the point of view of both Employ
 
 #### Login / Register
 - User logs in using username and password.
-- After login, they see their dashboard (list of trips).
+- After login, they see their dashboard (list of reimbursement requests).
 - JWT token is used to authenticate API calls.
 
-#### Create Trip
-- Click "Add Trip".
-- Enter trip details: title, description, start date, end date.
-- Trip is saved with status = Draft.
-- Trips can be edited or deleted before submission.
+#### Create reimbursement request
+- Click "Add Reimbursement Request".
+- Enter reimbursement request's details: title, description, start date, end date.
+- Reimbursement request is saved with status = Draft.
+- Reimbursement request can be edited or deleted before submission.
 
 #### Add Transactions
-- Each trip can have multiple transactions (expenses).
-- Each transaction includes:
+- Each reimbursement request can have multiple expenses.
+- Each expense includes:
   - Title  
   - Date & Time  
   - Category (Food, Transport, Lodging, Other)  
   - Amount  
   - Description (optional)
-- User can edit or delete transactions while trip is still Draft.
+- User can edit or delete expenses while reimbursement request is still Draft.
 
-#### Submit Trip
-- When all transactions are added, user clicks Submit.
-- Trip status becomes Submitted.
+#### Submit reimbursement request
+- When all expenses are added, user clicks Submit.
+- reimbursement request status becomes Submitted.
 - Editing is locked after submission.
 - Admin sees in dashboard.
-- Admin updates trip status
+- Admin updates reimbursement request status
 
 
 ### **Employee Flow Overview**
 
-![Employee Reimbursement Flowchart](assets/images/emp-flow.svg){ width="50%" style="display:block; margin-left:auto; margin-right:auto;" }
+![Employee Reimbursement Flowchart](assets/images/employee-flow.svg){ width="50%" style="display:block; margin-left:auto; margin-right:auto;" }
 
 ---
 
@@ -44,13 +44,13 @@ This section explains how the system works from the point of view of both Employ
 #### Login
 - Admin logs in to view dashboard.
 
-#### View Submitted Trips
-- All employee trips appear with status (Draft, Submitted, Approved, Rejected).
-- Admin can open each trip to view its details and transactions.
+#### View Submitted reimbursement requests
+- All employee reimbursement requests appear with status (Draft, Submitted, Approved, Rejected).
+- Admin can open each reimbursement request to view its details and expenses.
 
 #### Approve / Reject
 - Admin can click Approve or Reject.
-- On approval, trip status changes to Approved.
+- On approval, reimbursement request status changes to Approved.
 - On rejection, status changes to Rejected.
 
 

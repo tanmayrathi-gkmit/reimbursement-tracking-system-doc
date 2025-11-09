@@ -18,7 +18,7 @@ This process is slow, error-prone, and lacks visibility for both employees and a
 
 #### **Actors**
 - **Employee** – Staff member submitting a reimbursement request.  
-- **System** – The Reimbursement Tracking System that manages trips, expenses, and notifications.  
+- **System** – The Reimbursement Tracking System that manages reimbursement request and expenses.  
 - **Admin** – Reviewer who validates and approves or rejects the reimbursement request.
 
 #### **Goal**
@@ -26,37 +26,31 @@ To allow employees to easily create, manage, and submit reimbursement requests f
 
 #### **Scenario**
 1. The employee logs into the system.  
-2. Creates a new **trip** record.  
+2. Creates a new **reimbursement request** record.  
 3. Adds one or more **expenses** under the trip (e.g., travel, accommodation, meals).   
 4. Can **edit or delete** expenses anytime before submission.  
-5. Once finalized, the employee **submits** the trip for admin approval.  
+5. Once finalized, the employee **submits** the reimbursement request for admin approval.  
 6. The system stores the request, updates its status to **Submitted**, and notifies the admin.  
 
 #### **Preconditions**
 - The employee must be logged into the system.  
-- The trip must contain at least one expense.  
+- The reimbursement request must contain at least one expense.  
 - Reimbursement policies must be defined by the organization.  
 
 #### **Postconditions**
 - The reimbursement request is stored in the database.  
-- The trip status changes to **Submitted**.  
+- The reimbursement request status changes to **Submitted**.  
 - The request becomes visible to the admin for review.  
-<!-- 
-#### **Exceptions**
-- If required fields (e.g., amount, category) are missing, the system shows a validation error.  
-- If the employee cancels before submitting, the trip remains in **Draft** status.  
-- Claims exceeding policy limits may require additional manager approval.   -->
 
-
-### **Use Case 2: Admin – Approve or Reject Reimbursement**
+### **Use Case 2: Admin – Approve or Reject Reimbursement Request**
 
 #### **Actors**
 - **Admin / Finance Department** – Authorized user who reviews and validates claims.  
-- **Employee** – Claim submitter who receives feedback and notifications.  
+- **Employee** – Claim submitter who receives feedback. 
 - **System** – Handles record updates, notifications, and data logging.
 
 #### **Goal**
-To ensure that all submitted expense claims are reviewed and processed efficiently while maintaining compliance with company reimbursement policies.
+To ensure that all submitted reimbursement requests are reviewed and processed efficiently while maintaining compliance with company reimbursement policies.
 
 #### **Scenario**
 1. The admin logs into the system.  
@@ -73,12 +67,8 @@ To ensure that all submitted expense claims are reviewed and processed efficient
 - Expense approval policies must be pre-configured in the system.  
 
 #### **Postconditions**
-- The claim’s status is updated to **Approved** or **Rejected**.  
+- The reimbursement request status is updated to **Approved** or **Rejected**.  
 - All actions are recorded in the database for audit purposes.  
-<!-- 
-#### **Exceptions**  
-- Session timeouts require re-login.  
-- Disputed or flagged claims may be escalated to a higher authority.   -->
 
 ### **Overall Outcome**
 The **Reimbursement Tracking System** makes the reimbursement process faster, easier, and more transparent for everyone in the organization.  
