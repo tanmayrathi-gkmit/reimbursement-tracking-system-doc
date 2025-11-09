@@ -494,8 +494,8 @@
 <h1 id="overview"><strong>Overview</strong></h1>
 <p>Welcome to the documentation for the Reimbursement Tracking System.  </p>
 <h2 id="introduction"><strong>Introduction</strong></h2>
-<p>The Reimbursement Tracking System helps employees record their trip expenses and submit them for admin approval.<br />
-Admins can review these expenses, approve or reject them, and the system keeps track of everything digitally.</p>
+<p>The Reimbursement Tracking System helps employees record their reimbursement request and submit them for admin approval.<br />
+Admins can review these reimbursement requests, approve or reject them, and the system keeps track of everything digitally.</p>
 <h4 id="it-mainly-demonstrates"><strong>It mainly demonstrates</strong></h4>
 <ul>
 <li>Basic CRUD operations</li>
@@ -508,7 +508,7 @@ Admins can review these expenses, approve or reject them, and the system keeps t
 <ul>
 <li>Login &amp; Signup (User authentication)</li>
 <li>Roles: Employee and Admin</li>
-<li>Employees can create trips and add transactions (expenses)</li>
+<li>Employees can create reimbursement requests and add expenses</li>
 <li>Admins can review and approve/reject submissions</li>
 <li>CRUD for trips and transactions</li>
 <li>Basic responsive frontend</li>
@@ -526,13 +526,13 @@ Admins can review these expenses, approve or reject them, and the system keeps t
 <tbody>
 <tr>
 <td>Employee</td>
-<td>Regular user who creates trips and logs expenses.</td>
-<td>Can create, edit, delete their trips and transactions, submit trips for approval.</td>
+<td>Regular user who creates reimbursement requests and logs expenses.</td>
+<td>Can create, edit, delete their reimbursement request and expenses, submit reimbursement request for approval.</td>
 </tr>
 <tr>
 <td>Admin</td>
-<td>Reviewer who approves or rejects trip reimbursements.</td>
-<td>Can view all trips, approve or reject them, and manage users.</td>
+<td>Reviewer who approves or rejects reimbursement request.</td>
+<td>Can view all reimbursement requests, approve or reject them, and manage users.</td>
 </tr>
 </tbody>
 </table>
@@ -569,14 +569,9 @@ Admins can review these expenses, approve or reject them, and the system keeps t
 </table>
 <h4 id="future-scope"><strong>Future Scope</strong></h4>
 <ul>
-<li>Add <strong>email notifications</strong> so that when an employee submits a reimbursement, the admin gets an alert. Similarly, when the admin approves or rejects a request, an email notification is sent back to the employee.  </li>
+<li>Add <strong>email notifications</strong> so that when an employee submits a reimbursement request, the admin gets an alert. Similarly, when the admin approves or rejects a request, an email notification is sent back to the employee.  </li>
 <li>Add a <strong>receipt upload option</strong> for employees when submitting expenses. These uploaded receipts can be stored securely using <strong>AWS S3</strong> for better scalability.</li>
 </ul>
-<!-- 
-### **Quick Overview**
-1. The employee starts by creating a trip and adding all their transactions or expenses related to it. They can view or edit the trip anytime before submitting it for approval.
-2. The admin then checks the submitted trip and either approves or rejects the reimbursement request based on the details.
-3. Both sides can view trip history anytime. -->
 <hr />
 <p><strong>Next:</strong> <a href="functional/">Functional Overview</a></p>
 

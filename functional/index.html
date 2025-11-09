@@ -321,9 +321,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-trip" class="md-nav__link">
+  <a href="#create-reimbursement-request" class="md-nav__link">
     <span class="md-ellipsis">
-      Create Trip
+      Create reimbursement request
     </span>
   </a>
   
@@ -339,9 +339,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#submit-trip" class="md-nav__link">
+  <a href="#submit-reimbursement-request" class="md-nav__link">
     <span class="md-ellipsis">
-      Submit Trip
+      Submit reimbursement request
     </span>
   </a>
   
@@ -381,9 +381,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#view-submitted-trips" class="md-nav__link">
+  <a href="#view-submitted-reimbursement-requests" class="md-nav__link">
     <span class="md-ellipsis">
-      View Submitted Trips
+      View Submitted reimbursement requests
     </span>
   </a>
   
@@ -488,9 +488,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#create-trip" class="md-nav__link">
+  <a href="#create-reimbursement-request" class="md-nav__link">
     <span class="md-ellipsis">
-      Create Trip
+      Create reimbursement request
     </span>
   </a>
   
@@ -506,9 +506,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#submit-trip" class="md-nav__link">
+  <a href="#submit-reimbursement-request" class="md-nav__link">
     <span class="md-ellipsis">
-      Submit Trip
+      Submit reimbursement request
     </span>
   </a>
   
@@ -548,9 +548,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#view-submitted-trips" class="md-nav__link">
+  <a href="#view-submitted-reimbursement-requests" class="md-nav__link">
     <span class="md-ellipsis">
-      View Submitted Trips
+      View Submitted reimbursement requests
     </span>
   </a>
   
@@ -601,52 +601,52 @@
 <h4 id="login-register">Login / Register</h4>
 <ul>
 <li>User logs in using username and password.</li>
-<li>After login, they see their dashboard (list of trips).</li>
+<li>After login, they see their dashboard (list of reimbursement requests).</li>
 <li>JWT token is used to authenticate API calls.</li>
 </ul>
-<h4 id="create-trip">Create Trip</h4>
+<h4 id="create-reimbursement-request">Create reimbursement request</h4>
 <ul>
-<li>Click "Add Trip".</li>
-<li>Enter trip details: title, description, start date, end date.</li>
-<li>Trip is saved with status = Draft.</li>
-<li>Trips can be edited or deleted before submission.</li>
+<li>Click "Add Reimbursement Request".</li>
+<li>Enter reimbursement request's details: title, description, start date, end date.</li>
+<li>Reimbursement request is saved with status = Draft.</li>
+<li>Reimbursement request can be edited or deleted before submission.</li>
 </ul>
 <h4 id="add-transactions">Add Transactions</h4>
 <ul>
-<li>Each trip can have multiple transactions (expenses).</li>
-<li>Each transaction includes:</li>
+<li>Each reimbursement request can have multiple expenses.</li>
+<li>Each expense includes:</li>
 <li>Title  </li>
 <li>Date &amp; Time  </li>
 <li>Category (Food, Transport, Lodging, Other)  </li>
 <li>Amount  </li>
 <li>Description (optional)</li>
-<li>User can edit or delete transactions while trip is still Draft.</li>
+<li>User can edit or delete expenses while reimbursement request is still Draft.</li>
 </ul>
-<h4 id="submit-trip">Submit Trip</h4>
+<h4 id="submit-reimbursement-request">Submit reimbursement request</h4>
 <ul>
-<li>When all transactions are added, user clicks Submit.</li>
-<li>Trip status becomes Submitted.</li>
+<li>When all expenses are added, user clicks Submit.</li>
+<li>reimbursement request status becomes Submitted.</li>
 <li>Editing is locked after submission.</li>
 <li>Admin sees in dashboard.</li>
-<li>Admin updates trip status</li>
+<li>Admin updates reimbursement request status</li>
 </ul>
 <h3 id="employee-flow-overview"><strong>Employee Flow Overview</strong></h3>
-<p><img alt="Employee Reimbursement Flowchart" src="../assets/images/emp-flow.svg" style="display:block; margin-left:auto; margin-right:auto;" width="50%" /></p>
+<p><img alt="Employee Reimbursement Flowchart" src="../assets/images/employee-flow.svg" style="display:block; margin-left:auto; margin-right:auto;" width="50%" /></p>
 <hr />
 <h3 id="admin-user"><strong>Admin User</strong></h3>
 <h4 id="login">Login</h4>
 <ul>
 <li>Admin logs in to view dashboard.</li>
 </ul>
-<h4 id="view-submitted-trips">View Submitted Trips</h4>
+<h4 id="view-submitted-reimbursement-requests">View Submitted reimbursement requests</h4>
 <ul>
-<li>All employee trips appear with status (Draft, Submitted, Approved, Rejected).</li>
-<li>Admin can open each trip to view its details and transactions.</li>
+<li>All employee reimbursement requests appear with status (Draft, Submitted, Approved, Rejected).</li>
+<li>Admin can open each reimbursement request to view its details and expenses.</li>
 </ul>
 <h4 id="approve-reject">Approve / Reject</h4>
 <ul>
 <li>Admin can click Approve or Reject.</li>
-<li>On approval, trip status changes to Approved.</li>
+<li>On approval, reimbursement request status changes to Approved.</li>
 <li>On rejection, status changes to Rejected.</li>
 </ul>
 <h3 id="admin-flow-overview"><strong>Admin Flow Overview</strong></h3>

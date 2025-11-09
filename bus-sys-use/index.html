@@ -410,13 +410,13 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-case-2-admin-approve-or-reject-reimbursement" class="md-nav__link">
+  <a href="#use-case-2-admin-approve-or-reject-reimbursement-request" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Case 2: Admin – Approve or Reject Reimbursement
+      Use Case 2: Admin – Approve or Reject Reimbursement Request
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Use Case 2: Admin – Approve or Reject Reimbursement">
+    <nav class="md-nav" aria-label="Use Case 2: Admin – Approve or Reject Reimbursement Request">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -615,13 +615,13 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#use-case-2-admin-approve-or-reject-reimbursement" class="md-nav__link">
+  <a href="#use-case-2-admin-approve-or-reject-reimbursement-request" class="md-nav__link">
     <span class="md-ellipsis">
-      Use Case 2: Admin – Approve or Reject Reimbursement
+      Use Case 2: Admin – Approve or Reject Reimbursement Request
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Use Case 2: Admin – Approve or Reject Reimbursement">
+    <nav class="md-nav" aria-label="Use Case 2: Admin – Approve or Reject Reimbursement Request">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -731,7 +731,7 @@ This process is slow, error-prone, and lacks visibility for both employees and a
 <h4 id="actors"><strong>Actors</strong></h4>
 <ul>
 <li><strong>Employee</strong> – Staff member submitting a reimbursement request.  </li>
-<li><strong>System</strong> – The Reimbursement Tracking System that manages trips, expenses, and notifications.  </li>
+<li><strong>System</strong> – The Reimbursement Tracking System that manages reimbursement request and expenses.  </li>
 <li><strong>Admin</strong> – Reviewer who validates and approves or rejects the reimbursement request.</li>
 </ul>
 <h4 id="goal"><strong>Goal</strong></h4>
@@ -739,39 +739,33 @@ This process is slow, error-prone, and lacks visibility for both employees and a
 <h4 id="scenario"><strong>Scenario</strong></h4>
 <ol>
 <li>The employee logs into the system.  </li>
-<li>Creates a new <strong>trip</strong> record.  </li>
+<li>Creates a new <strong>reimbursement request</strong> record.  </li>
 <li>Adds one or more <strong>expenses</strong> under the trip (e.g., travel, accommodation, meals).   </li>
 <li>Can <strong>edit or delete</strong> expenses anytime before submission.  </li>
-<li>Once finalized, the employee <strong>submits</strong> the trip for admin approval.  </li>
+<li>Once finalized, the employee <strong>submits</strong> the reimbursement request for admin approval.  </li>
 <li>The system stores the request, updates its status to <strong>Submitted</strong>, and notifies the admin.  </li>
 </ol>
 <h4 id="preconditions"><strong>Preconditions</strong></h4>
 <ul>
 <li>The employee must be logged into the system.  </li>
-<li>The trip must contain at least one expense.  </li>
+<li>The reimbursement request must contain at least one expense.  </li>
 <li>Reimbursement policies must be defined by the organization.  </li>
 </ul>
 <h4 id="postconditions"><strong>Postconditions</strong></h4>
 <ul>
 <li>The reimbursement request is stored in the database.  </li>
-<li>The trip status changes to <strong>Submitted</strong>.  </li>
+<li>The reimbursement request status changes to <strong>Submitted</strong>.  </li>
 <li>The request becomes visible to the admin for review.  </li>
 </ul>
-<!-- 
-#### **Exceptions**
-- If required fields (e.g., amount, category) are missing, the system shows a validation error.  
-- If the employee cancels before submitting, the trip remains in **Draft** status.  
-- Claims exceeding policy limits may require additional manager approval.   -->
-
-<h3 id="use-case-2-admin-approve-or-reject-reimbursement"><strong>Use Case 2: Admin – Approve or Reject Reimbursement</strong></h3>
+<h3 id="use-case-2-admin-approve-or-reject-reimbursement-request"><strong>Use Case 2: Admin – Approve or Reject Reimbursement Request</strong></h3>
 <h4 id="actors_1"><strong>Actors</strong></h4>
 <ul>
 <li><strong>Admin / Finance Department</strong> – Authorized user who reviews and validates claims.  </li>
-<li><strong>Employee</strong> – Claim submitter who receives feedback and notifications.  </li>
+<li><strong>Employee</strong> – Claim submitter who receives feedback. </li>
 <li><strong>System</strong> – Handles record updates, notifications, and data logging.</li>
 </ul>
 <h4 id="goal_1"><strong>Goal</strong></h4>
-<p>To ensure that all submitted expense claims are reviewed and processed efficiently while maintaining compliance with company reimbursement policies.</p>
+<p>To ensure that all submitted reimbursement requests are reviewed and processed efficiently while maintaining compliance with company reimbursement policies.</p>
 <h4 id="scenario_1"><strong>Scenario</strong></h4>
 <ol>
 <li>The admin logs into the system.  </li>
@@ -790,14 +784,9 @@ This process is slow, error-prone, and lacks visibility for both employees and a
 </ul>
 <h4 id="postconditions_1"><strong>Postconditions</strong></h4>
 <ul>
-<li>The claim’s status is updated to <strong>Approved</strong> or <strong>Rejected</strong>.  </li>
+<li>The reimbursement request status is updated to <strong>Approved</strong> or <strong>Rejected</strong>.  </li>
 <li>All actions are recorded in the database for audit purposes.  </li>
 </ul>
-<!-- 
-#### **Exceptions**  
-- Session timeouts require re-login.  
-- Disputed or flagged claims may be escalated to a higher authority.   -->
-
 <h3 id="overall-outcome"><strong>Overall Outcome</strong></h3>
 <p>The <strong>Reimbursement Tracking System</strong> makes the reimbursement process faster, easier, and more transparent for everyone in the organization.<br />
 Instead of using Google Forms or emails, all tasks, from expense submission to final approval, happen in one system.</p>
