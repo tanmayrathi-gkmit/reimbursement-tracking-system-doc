@@ -27,7 +27,7 @@ This section explains how the system works from the point of view of both Employ
 
 #### Submit reimbursement request
 - When all expenses are added, user clicks Submit.
-- reimbursement request status becomes Submitted.
+- Reimbursement request status becomes Submitted.
 - Editing is locked after submission.
 - Admin sees in dashboard.
 - Admin updates reimbursement request status
