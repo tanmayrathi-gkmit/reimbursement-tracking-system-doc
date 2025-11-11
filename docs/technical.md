@@ -1,4 +1,4 @@
-# **Reimbursement Tracking System (RTS) — Technical Documentation**
+# **Reimbursement Tracking System — Technical Documentation**
 ## **Data Modeling**
 The Reimbursement Tracking System (RTS) uses a structured relational schema built on PostgreSQL to ensure data integrity, consistency, and relational linkage between entities.
 ### **Why Structured Database**
