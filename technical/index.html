@@ -935,7 +935,7 @@
 <li>Complex queries (filtering requests, aggregating expenses, generating reports) are efficiently handled using SQL joins.</li>
 </ul>
 <h3 id="schema-diagram"><strong>Schema Diagram</strong></h3>
-<p><img alt="Schema Diagram" src="../assets/images/final_schema_diagram.svg" style="display:block; margin-left:auto; margin-right:auto;" width="50%" /></p>
+<p><img alt="Schema Diagram" src="../assets/images/final_schema.svg" style="display:block; margin-left:auto; margin-right:auto;" width="50%" /></p>
 <h3 id="entity-descriptions"><strong>Entity Descriptions</strong></h3>
 <p><strong>1. User:</strong> Represents both employees and admins. Each user has unique credentials and a defined role that controls access within the system. The emp_id field allows mapping users to internal company records.</p>
 <p><strong>2. Request:</strong> Stores details of each reimbursement request. Every request is linked to one user and can include multiple expense entries. Requests move through different statuses — draft, submitted, approved, or rejected — based on workflow actions.</p>
