@@ -100,7 +100,8 @@ Every authenticated user is assigned a role (`admin` or `employee`), which defin
 
 ### **Authorization Overview**
 
-Authorization ensures that:
+#### Authorization ensures that:
+
 - Employees can only access and manage their own reimbursement data.  
 - Admins can view and manage all reimbursement requests except those still in draft status.  
 - Only Admins can add new users to the system.  

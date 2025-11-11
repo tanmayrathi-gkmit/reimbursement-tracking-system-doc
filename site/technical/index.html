@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#reimbursement-tracking-system-rts-technical-documentation" class="md-skip">
+        <a href="#reimbursement-tracking-system-technical-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -529,6 +529,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Authorization Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authorization-ensures-that" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorization ensures that:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -821,6 +836,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Authorization Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authorization-ensures-that" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authorization ensures that:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -895,7 +925,7 @@
 
 
 
-<h1 id="reimbursement-tracking-system-rts-technical-documentation"><strong>Reimbursement Tracking System (RTS) — Technical Documentation</strong></h1>
+<h1 id="reimbursement-tracking-system-technical-documentation"><strong>Reimbursement Tracking System — Technical Documentation</strong></h1>
 <h2 id="data-modeling"><strong>Data Modeling</strong></h2>
 <p>The Reimbursement Tracking System (RTS) uses a structured relational schema built on PostgreSQL to ensure data integrity, consistency, and relational linkage between entities.</p>
 <h3 id="why-structured-database"><strong>Why Structured Database</strong></h3>
@@ -1033,10 +1063,12 @@ This ensures stateless, secure communication between the frontend and backend, w
 <p>After authentication, the Reimbursement Tracking System (RTS) enforces role-based authorization to control access to system resources.<br />
 Every authenticated user is assigned a role (<code>admin</code> or <code>employee</code>), which defines their permissions and scope of operations within the application.</p>
 <h3 id="authorization-overview"><strong>Authorization Overview</strong></h3>
-<p>Authorization ensures that:
-- Employees can only access and manage their own reimbursement data.<br />
-- Admins can view and manage all reimbursement requests except those still in draft status.<br />
-- Only Admins can add new users to the system.  </p>
+<h4 id="authorization-ensures-that">Authorization ensures that:</h4>
+<ul>
+<li>Employees can only access and manage their own reimbursement data.  </li>
+<li>Admins can view and manage all reimbursement requests except those still in draft status.  </li>
+<li>Only Admins can add new users to the system.  </li>
+</ul>
 <h3 id="roles-and-access-levels"><strong>Roles and Access Levels</strong></h3>
 <table>
 <thead>
