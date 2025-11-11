@@ -393,6 +393,28 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="technical/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Technical Documentation
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -567,36 +589,88 @@
 <tr>
 <th>Component</th>
 <th>Technology Used</th>
+<th>Current Stable Version</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Backend</td>
-<td>Django REST Framework</td>
+<td><strong>Backend</strong></td>
+<td>Django REST Framework (DRF)</td>
+<td>3.16.1</td>
 </tr>
 <tr>
-<td>Frontend</td>
+<td><strong>Frontend</strong></td>
 <td>HTML, CSS, JavaScript</td>
+<td>—</td>
 </tr>
 <tr>
-<td>Auth</td>
-<td>JWT Authentication</td>
+<td><strong>Authentication</strong></td>
+<td>JWT Authentication (SimpleJWT)</td>
+<td>5.5.1</td>
 </tr>
 <tr>
-<td>Database</td>
+<td><strong>Database</strong></td>
 <td>PostgreSQL</td>
+<td>14</td>
 </tr>
 <tr>
-<td>PWA</td>
+<td><strong>PWA</strong></td>
 <td>Manifest + Service Worker</td>
+<td>—</td>
+</tr>
+<tr>
+<td><strong>CI/CD</strong></td>
+<td>GitHub Actions</td>
+<td>Latest</td>
 </tr>
 </tbody>
 </table>
 <h4 id="future-scope"><strong>Future Scope</strong></h4>
+<p><strong>1. Email Notifications:</strong><br />
+  Implement an automated email notification system to improve communication between employees and admins.<br />
+  When an employee submits a reimbursement request, the admin will receive an email alert. Similarly, when the admin approves or rejects a request, the employee will be notified.<br />
+  This will ensure timely updates, greater transparency, and smoother workflow coordination.</p>
+<p><strong>2. Expense Proof Uploads:</strong><br />
+  Introduce a feature allowing employees to upload supporting documents or receipts when submitting expenses.<br />
+  These files can be securely stored and managed using AWS S3, offering scalable storage, reliable access, and enhanced audit and verification capabilities.</p>
+<p><strong>3. Enhanced Admin Functionality:</strong><br />
+  Expand the admin dashboard and feature set to improve financial tracking, decision-making, and workflow control.</p>
+<p>Planned enhancements include:</p>
 <ul>
-<li>Implement email notifications to enhance communication between employees and admins. When an employee submits a reimbursement request, the admin will automatically receive an alert. Likewise, when the admin approves or rejects a request, the employee will be notified via email, ensuring timely updates and better workflow transparency. </li>
-<li>Add an option for employees to upload supporting proofs or documents when submitting expenses. These files can be securely stored and managed using AWS S3, providing scalable storage, easy access, and improved auditing and verification capabilities.</li>
+<li>
+<p><strong>Partial Request Approval:</strong><br />
+     Allow admins to approve or reject individual expenses within a reimbursement request instead of approving or rejecting the entire request.<br />
+     This gives admins better control over expense validation and ensures legitimate items are not held up by problematic entries.</p>
+</li>
+<li>
+<p><strong>Expense Categories Table:</strong><br />
+     Introduce a dedicated categories table to standardize expense classification (e.g., Travel, Meals, Lodging, Office Supplies).<br />
+     This structure will support category-based filtering, reporting, and policy enforcement — making it easier to analyze spending patterns across departments.</p>
+</li>
+<li>
+<p><strong>Expanded Role Management:</strong><br />
+     Add more granular user roles beyond just <code>admin</code> and <code>employee</code>, such as Lead, Manager, Senior Engineer, or Finance Officer.<br />
+     Each role will have customized access and approval privileges to create a multi-level review and authorization workflow.</p>
+</li>
+<li>
+<p><strong>Advanced Analytics &amp; Reporting:</strong><br />
+     Equip the admin dashboard with analytical tools to:</p>
+<ul>
+<li>Display expenses day-wise, category-wise, and user-wise.  </li>
+<li>Generate monthly or quarterly summaries of total claims, approved amounts, and pending reimbursements.  </li>
+<li>Offer data visualization (charts/graphs) for a clear overview of organizational spending patterns.</li>
 </ul>
+</li>
+<li>
+<p><strong>Enhanced Financial Oversight:</strong><br />
+     Enable admins to track the total approved amount across departments, projects, or time periods.<br />
+     This feature will help finance teams manage budgets effectively and identify abnormal spending trends early.</p>
+</li>
+</ul>
+<p><strong>Future Schema Diagram</strong></p>
+<p><img alt="Future Schema Diagram" src="assets/images/future.svg" style="display:block; margin-left:auto; margin-right:auto;" width="100%" /></p>
+<p><strong>Future Architecture Diagram</strong></p>
+<p><img alt="Future Architecture Diagram" src="assets/images/future_architecture.svg" style="display:block; margin-left:auto; margin-right:auto;" width="100%" /></p>
 <hr />
 <p><strong>Next:</strong> <a href="functional/">Functional Documentation</a></p>
 
