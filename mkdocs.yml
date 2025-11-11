@@ -4,6 +4,7 @@ nav:
   - Overview: index.md
   - Functional Documentation: functional.md
   - Use Case: bus-sys-use.md
+  - Technical Documentation: technical.md
 
 theme:
   name: material

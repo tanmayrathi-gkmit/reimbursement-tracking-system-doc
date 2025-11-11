@@ -79,3 +79,6 @@ Instead of using Google Forms or emails, all tasks, from expense submission to f
 - Admins can review and approve requests efficiently from one dashboard.  
 - It saves time, reduces human error, and keeps all data organized.  
 - The workflow becomes smoother, fair, and paperless.  
+---
+
+**Next:** [Technical Documentation](technical.md)
