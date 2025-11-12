@@ -707,39 +707,39 @@
 <h2 id="backend-unit-test-cases">Backend Unit Test Cases</h2>
 <h3 id="function-user-authentication">Function: User Authentication</h3>
 <ul>
-<li>If the user sends a POST request to /api/auth/login/ with a valid username and password, then the server should respond with status 200 OK and return both access and refresh tokens.  </li>
+<li>If the user sends a POST request to <code>/api/auth/login/</code> with a valid username and password, then the server should respond with status 200 OK and return both access and refresh tokens.  </li>
 <li>If the credentials match a registered user, then the system should also include user role information in the response (admin/employee).  </li>
 <li>If incorrect credentials are sent, the API should return 401 Unauthorized with an error message “Invalid username or password.”  </li>
 <li>If either the username or password is missing in the request body, the server should return 400 Bad Request with a validation error.</li>
 </ul>
 <h3 id="function-user-management-admin-only">Function: User Management (Admin Only)</h3>
 <ul>
-<li>If an admin sends a valid POST request to /api/users/ with correct data, a new user record should be created, returning 201 Created.  </li>
-<li>If an admin sends a GET request to /api/users/, all users should be listed successfully.  </li>
-<li>If an admin sends a PATCH request to /api/users/{id}/ with valid fields, the user should be updated successfully.  </li>
-<li>If a non-admin user tries to access /api/users/, the response should be 403 Forbidden.  </li>
+<li>If an admin sends a valid POST request to <code>/api/users/</code> with correct data, a new user record should be created, returning 201 Created.  </li>
+<li>If an admin sends a GET request to <code>/api/users/</code>, all users should be listed successfully.  </li>
+<li>If an admin sends a PATCH request to <code>/api/users/{id}/</code> with valid fields, the user should be updated successfully.  </li>
+<li>If a non-admin user tries to access <code>/api/users/</code>, the response should be 403 Forbidden.  </li>
 <li>If required fields (like username or email) are missing, the API should return 400 Bad Request.  </li>
 <li>If a duplicate username or email is provided, an error “User with this email already exists” should be returned.</li>
 </ul>
 <h3 id="function-reimbursement-request-creation">Function: Reimbursement Request Creation</h3>
 <ul>
-<li>If an authenticated employee submits valid data via /api/requests/, the request should be created successfully with 201 Created.  </li>
+<li>If an authenticated employee submits valid data via <code>/api/requests/</code>, the request should be created successfully with 201 Created. </li>
 <li>The created request should be linked to the currently authenticated user.  </li>
 <li>If the title field is missing, the response should be 400 Bad Request with validation errors.  </li>
 <li>If invalid data types (e.g., string in amount) are sent, validation errors should appear.</li>
 </ul>
 <h3 id="function-reimbursement-request-retrieval">Function: Reimbursement Request Retrieval</h3>
 <ul>
-<li>If an authenticated employee sends a GET request to /api/requests/, they should receive only their own reimbursement requests.  </li>
+<li>If an authenticated employee sends a GET request to <code>/api/requests/</code>, they should receive only their own reimbursement requests.  </li>
 <li>If an admin sends the same request, they should receive all reimbursement requests.  </li>
 <li>If an unauthenticated user sends the request, it should return 401 Unauthorized.  </li>
 <li>If there are no reimbursement requests, the API should return an empty list with 200 OK.</li>
 </ul>
 <h3 id="function-expense-management-inside-a-request">Function: Expense Management (Inside a Request)</h3>
 <ul>
-<li>If the user submits a valid POST request to /api/expenses/ with title, amount, and request ID, then the expense should be created successfully.  </li>
+<li>If the user submits a valid POST request to <code>/api/expenses/</code> with title, amount, and request ID, then the expense should be created successfully.  </li>
 <li>The expense should link to the correct reimbursement request.  </li>
-<li>GET /api/expenses/?request=\&lt;id&gt; should list all expenses belonging to that request.  </li>
+<li>GET <code>/api/expenses/?request=&lt;id&gt;</code> should list all expenses belonging to that request.  </li>
 <li>If the linked reimbursement request ID does not exist, the API should return 400 Bad Request.  </li>
 <li>If the amount is negative or not numeric, the system should return a validation error.</li>
 </ul>
