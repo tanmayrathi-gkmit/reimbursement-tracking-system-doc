@@ -1,14 +1,14 @@
-# **Reimbursement Tracking System – Use Case Documentation**
+# **Employee Reimursement System – Use Case Documentation**
 
 ### **Purpose**
-This document describes the key **use cases** for the **Reimbursement Tracking System**.  
+This document describes the key **use cases** for the **Employee Reimursement System**.  
 The goal is to simplify and digitize the organization’s reimbursement process by replacing manual Google Forms and emails with a transparent, efficient, and centralized digital system.
 
 ### **Business Overview**
 Currently, employees submit travel or work-related reimbursement claims manually using forms or spreadsheets.  
 This process is slow, error-prone, and lacks visibility for both employees and administrators.
 
-#### The **Reimbursement Tracking System** aims to:
+#### The **Employee Reimursement System** aims to:
 - Reduce manual effort and increase operational efficiency.  
 - Provide better transparency and accountability.  
 - Maintain accurate financial records for audit and reporting.  
@@ -18,7 +18,7 @@ This process is slow, error-prone, and lacks visibility for both employees and a
 
 #### **Actors**
 - **Employee** – Staff member submitting a reimbursement request.  
-- **System** – The Reimbursement Tracking System that manages reimbursement request and expenses.  
+- **System** – The Employee Reimursement System that manages reimbursement request and expenses.  
 - **Admin** – Reviewer who validates and approves or rejects the reimbursement request.
 
 #### **Goal**
@@ -71,7 +71,7 @@ To ensure that all submitted reimbursement requests are reviewed and processed e
 - All actions are recorded in the database for audit purposes.  
 
 ### **Overall Outcome**
-The **Reimbursement Tracking System** makes the reimbursement process faster, easier, and more transparent for everyone in the organization.  
+The **Employee Reimursement System** makes the reimbursement process faster, easier, and more transparent for everyone in the organization.  
 Instead of using Google Forms or emails, all tasks, from expense submission to final approval, happen in one system.
 
 #### **With this system:**

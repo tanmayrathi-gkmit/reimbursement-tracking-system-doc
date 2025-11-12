@@ -1,4 +1,4 @@
-# **Reimbursement Tracking System — Technical Documentation**
+# **Employee Reimursement System — Technical Documentation**
 
 ## **Tech Stack**
 
@@ -32,7 +32,7 @@
 
 
 ## **Data Modeling**
-The Reimbursement Tracking System (RTS) uses a structured relational schema built on PostgreSQL to ensure data integrity, consistency, and relational linkage between entities.
+The Employee Reimursement System (ERS) uses a structured relational schema built on PostgreSQL to ensure data integrity, consistency, and relational linkage between entities.
 ### **Why Structured Database**
 - Financial and transactional data require accuracy, consistency, and referential integrity.
 - PostgreSQL enforces ACID compliance, foreign keys, and data constraints, critical for reimbursement and audit workflows.
@@ -59,7 +59,7 @@ The system is composed of three primary layers:
 ![Architecture Diagram](assets/images/architecture_diagram.svg){ width="100%" style="display:block; margin-left:auto; margin-right:auto;" }
 
 ## **Data Flow**
-The Reimbursement Tracking System (RTS) follows a centralized, role-driven data flow connecting the frontend, backend, and database layers.
+The Employee Reimursement System (ERS) follows a centralized, role-driven data flow connecting the frontend, backend, and database layers.
 All interactions occur through authenticated REST API endpoints secured with JWT tokens.
 ### **Overview**
 The system consists of two user types — Employee and Admin — both interacting with the same backend and database through different process flows:
@@ -101,7 +101,7 @@ The system consists of two user types — Employee and Admin — both interactin
 
 
 ## **Authentication**
-The Reimbursement Tracking System (RTS) uses JWT (JSON Web Token)–based authentication implemented through Django REST Framework Simple JWT.  
+The Employee Reimursement System (ERS) uses JWT (JSON Web Token)–based authentication implemented through Django REST Framework Simple JWT.  
 This ensures stateless, secure communication between the frontend and backend, with short-lived access tokens and refresh tokens for session continuity.
 ### **Authentication Process Overview**
 
@@ -127,7 +127,7 @@ SIMPLE_JWT = {
 ```
 
 ## **Authorization**
-After authentication, the Reimbursement Tracking System (RTS) enforces role-based authorization to control access to system resources.  
+After authentication, the Employee Reimursement System (ERS) enforces role-based authorization to control access to system resources.  
 Every authenticated user is assigned a role (`admin` or `employee`), which defines their permissions and scope of operations within the application.
 
 ### **Authorization Overview**

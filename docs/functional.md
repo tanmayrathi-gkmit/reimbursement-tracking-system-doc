@@ -1,4 +1,4 @@
-# **Reimbursement Tracking System – Functional Documentation**
+# **Employee Reimursement System – Functional Documentation**
 
 This section explains how the system works from the point of view of both Employee and Admin users.
 
