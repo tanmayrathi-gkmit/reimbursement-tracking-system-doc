@@ -34,15 +34,15 @@ To address these challenges, the Reimbursement Tracking System offers a fully di
 | Admin | Reviewer who approves or rejects reimbursement request. | Can view all reimbursement requests, approve or reject them, and manage users. |
 
 
-#### **Tech Stack**
+<!-- #### **Tech Stack**
 | Component | Technology Used | Current Stable Version |
 |------------|------------------|------------------------|
 | **Backend** | Django REST Framework (DRF) | 3.16.1 |
-| **Frontend** | HTML, CSS, JavaScript | — |
+| **Frontend** | HTML5, CSS3, JavaScript, Bootstrap 5 | — |
 | **Authentication** | JWT Authentication (SimpleJWT) | 5.5.1 |
 | **Database** | PostgreSQL | 14 |
 | **PWA** | Manifest + Service Worker | — |
-| **CI/CD** | GitHub Actions | Latest |
+| **CI/CD** | GitHub Actions | Latest | -->
 
 #### **Future Scope**
 

@@ -1,4 +1,36 @@
 # **Reimbursement Tracking System — Technical Documentation**
+
+## **Tech Stack**
+
+### **1. Frontend**
+
+| Component | Technology Used | Stable Version | Description |
+|------------|------------------|----------------|--------------|
+| **Markup & Styling** | HTML5, CSS3 | Latest | Used to create a responsive and accessible user interface. |
+| **Scripting** | JavaScript (Vanilla JS) | ES6+ | Handles API integration, form validation, and user interactions. |
+| **Design Framework** | Bootstrap (optional) | 5.x | Optional use for layout, grid, and responsive design. |
+| **PWA Support** | Web App Manifest, Service Worker | — | Enables offline functionality and mobile compatibility. |
+
+### **2. Backend**
+
+| Component | Technology Used | Stable Version | Description |
+|------------|------------------|----------------|--------------|
+| **Framework** | Django REST Framework (DRF) | 3.16 | Handles APIs, authentication, and business logic. |
+| **Language** | Python | 3.13.7 | Backend development language for logic and integration. |
+| **Authentication** | Simple JWT (DRF) | 5.5.1| Provides stateless user authentication via JWT tokens. |
+| **Database** | PostgreSQL | 16 | Stores structured data with relational integrity. |
+| **ORM** | Django ORM | Included | Simplifies database queries and migrations. |
+
+### **3. Tools & Infrastructure**
+
+| Component | Technology Used | Stable Version | Description |
+|------------|------------------|----------------|--------------|
+| **Version Control** | Git + GitHub | Latest | Used for source code management and collaboration. |
+| **CI/CD Pipeline** | GitHub Actions | Latest | Automates build, testing, and deployment workflows. |
+| **Package Management** | pip | 25.2 | Handles dependency installation and environment management. |
+| **IDE / Code Editor** | VS Code | Latest | Development environment for writing and debugging code. |
+
+
 ## **Data Modeling**
 The Reimbursement Tracking System (RTS) uses a structured relational schema built on PostgreSQL to ensure data integrity, consistency, and relational linkage between entities.
 ### **Why Structured Database**
@@ -6,7 +38,7 @@ The Reimbursement Tracking System (RTS) uses a structured relational schema buil
 - PostgreSQL enforces ACID compliance, foreign keys, and data constraints, critical for reimbursement and audit workflows.
 - Complex queries (filtering requests, aggregating expenses, generating reports) are efficiently handled using SQL joins.
 ### **Schema Diagram**
-![Schema Diagram](assets/images/final_schema_diagram.svg){ width="50%" style="display:block; margin-left:auto; margin-right:auto;" }
+![Schema Diagram](assets/images/final_schema.svg){ width="50%" style="display:block; margin-left:auto; margin-right:auto;" }
 ### **Entity Descriptions**
 **1. User:** Represents both employees and admins. Each user has unique credentials and a defined role that controls access within the system. The emp_id field allows mapping users to internal company records.
 
